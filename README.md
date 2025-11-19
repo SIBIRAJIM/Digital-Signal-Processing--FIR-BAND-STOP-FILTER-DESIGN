@@ -1,8 +1,11 @@
 # Digital-Signal-Processing--FIR-BAND-STOP-FILTER-DESIGN
+
 ## AIM:
 To generate design of Band Stop FIR digital filter using Window.
+
 ## Software Required:
 MAT LAB R2012.
+
 ## Algorithm:
 Step 1: Open MATLAB and Write the program.
 
@@ -19,6 +22,7 @@ Step 5: Plot the magnitude spectrum with x-label and y-label with suitable title
 Step 6: Terminate the program.
 
 ## PROGRAM: 
+
 ```
 clc; % clear screen
 clear all; % clear screen
@@ -31,17 +35,24 @@ eps=0.001;
 %Band Stop Filter Coefficient 
 n=0:1:N-1;
 hd=(sin(pi*(n-alpha+eps))-sin((n-alpha+eps)*wc1)+sin((n-alpha+eps)*wc2))./(pi*(n-alpha+eps)) 
-%Bartlett Window Sequence
+%Hamming Window Sequence
 n=0:1:N-1;
 wh=0.54-0.46*cos((2*pi*n)/(N-1))
 hn=hd.*wh
-% Plot the Low Pass Filter with Bartlett Window Technique
+% Plot the Low Pass Filter with Hamming Window Technique
 w=0:0.01:pi;
 h=freqz(hn,1,w);
 plot(w/pi,abs(h),'blue');
 ```
+
 ## OUTPUT:
 
+Design of Band stop FIR digital filters using Hamming Window.<br>
+𝐻(𝑒𝑗𝜔)=0 for 𝜋4<|𝜔|<3𝜋4<br>
+𝐻(𝑒𝑗𝜔)=1 for |𝜔|≤𝜋4,3𝜋4≤|𝜔|≤𝜋 <br>using Hamming Window, M=19
 <img width="956" height="787" alt="Screenshot 2025-11-10 100209" src="https://github.com/user-attachments/assets/03f41fb9-6102-46b7-9907-3a15dc200ed0" />
 
 ## RESULT:
+
+Thus the design of Band stop FIR digital filter using Hamming waveforms were plotted and output was verified.
+
