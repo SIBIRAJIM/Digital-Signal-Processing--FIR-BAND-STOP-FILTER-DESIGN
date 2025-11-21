@@ -53,6 +53,5 @@ Design of Band stop FIR digital filters using Hamming Window.<br>
 <img width="956" height="787" alt="Screenshot 2025-11-10 100209" src="https://github.com/user-attachments/assets/03f41fb9-6102-46b7-9907-3a15dc200ed0" />
 
 ## RESULT:
-
-Thus the design of Band stop FIR digital filter using Hamming waveforms were plotted and output was verified.
+<img width="744" height="321" alt="image" src="https://github.com/user-attachments/assets/b43e85e9-87f2-48ce-ac76-348a5de06443" />
 
